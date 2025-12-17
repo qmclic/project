@@ -31,6 +31,14 @@ document.getElementById("random-btn").addEventListener("click", () => {
 });
 
 
+// dark mode
+
+const darkModeBtn = document.getElementById("darkModeToggle");
+
+darkModeBtn.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+});
+
 
 
 // maya image change

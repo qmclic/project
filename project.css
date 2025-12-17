@@ -239,6 +239,44 @@ nav, header, footer {
   margin-left: 75%;
 }
 
+
+
+/* change background to non gif alternative  */
+body.dark-mode {
+  background-image: none;
+  background-color: #7b6546;
+}
+
+body.dark-mode .grid-container {
+  background-image: none;
+  background-color: #7b6546;
+}
+
+/* Header colour change */
+body.dark-mode header {
+  background-color: #4c3e2a;
+}
+
+body.dark-mode header h1 {
+  color: #ffffff;
+}
+
+body.dark-mode nav,
+body.dark-mode .grid-left,
+body.dark-mode main,
+body.dark-mode .grid-right {
+  background-color: #7b6546;
+}
+
+body.dark-mode footer {
+
+    background-color: #4c3e2a;
+    color: white
+
+}
+
+
+
 /* Mobile Mode */
 @media screen and (max-width: 1200px) {
   .page-background {
