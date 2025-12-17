@@ -261,12 +261,9 @@ body.dark-mode header h1 {
   color: #ffffff;
 }
 
-body.dark-mode nav,
-body.dark-mode main,
-{  background-color: #7b6546;
-}
 
-body.dark-mode footer, body.dark-mode .grid-right, body.dark-mode .grid-left {
+body.dark-mode footer, body.dark-mode nav,
+body.dark-mode main, body.dark-mode .grid-right, body.dark-mode .grid-left {
 
     background-color: #4c3e2a;
     color: white
