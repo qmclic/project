@@ -144,3 +144,13 @@ saveBtn.addEventListener('click', () => {
         URL.revokeObjectURL(url);
     }, 'image/jpeg', 0.9);
 });
+
+
+
+// diff background
+
+const darkModeBtn = document.getElementById("darkModeToggle");
+
+darkModeBtn.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+});

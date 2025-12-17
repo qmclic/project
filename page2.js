@@ -131,3 +131,14 @@ clearWatchedBtn.addEventListener('click', clearWatched);
 loadState();
 
 
+
+
+
+// diff background
+
+const darkModeBtn = document.getElementById("darkModeToggle");
+
+darkModeBtn.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+});
+

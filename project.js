@@ -31,7 +31,7 @@ document.getElementById("random-btn").addEventListener("click", () => {
 });
 
 
-// dark mode
+// diff background
 
 const darkModeBtn = document.getElementById("darkModeToggle");
 
