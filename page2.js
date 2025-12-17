@@ -142,3 +142,19 @@ darkModeBtn.addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
 });
 
+
+
+// // kerr image change
+// const kerrImg = document.getElementById("change-Kerr");
+// function changeKerrImage() {
+//   if (KerrImg.getAttribute("src") === "hollywood/Kerr.jpg") {
+//     KerrImg.alt = "A New Image of Maya Deren";
+//     KerrImg.src = "hollywood/Kerr1.jpg.jpg";
+//   } else {
+//     KerrImg.alt = "Original Maya Deren Image";
+//     KerrImg.src = "hollywood/Kerr.jpg";
+//   }
+// }
+// KerrImg.addEventListener("click", changeKerrImage);
+
+

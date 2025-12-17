@@ -67,7 +67,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 
-  padding: 20px;
   border: 2px solid #ccc;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
@@ -166,6 +165,13 @@ nav, header, footer {
     margin: 0;
 }
 
+/* hollywood stars */
+
+
+.hollywood img {
+display: block;
+    margin: 0 auto;
+}
 
 /* movie posters */
 .carousel {
@@ -176,6 +182,7 @@ nav, header, footer {
 
 .carousel-track {
   display: flex;
+  
   flex-direction: column;
   justify-content: center; 
   height: max-content;
@@ -184,6 +191,7 @@ nav, header, footer {
 
 .carousel img {
   display: block;
+
   margin: 5px;
 }
 
@@ -311,10 +319,12 @@ body.dark-mode main, body.dark-mode .grid-right, body.dark-mode .grid-left {
     width: 100%;
   }
 
+  .canvas {
+  width: 30
+  }
+
   .carousel {
-  height: 455px; 
-  width: 100%;   
-  max-width: 600px; 
+  height: 200; 
   margin: 0 auto; 
   overflow: hidden;
   position: relative; 
