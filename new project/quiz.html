@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+
+        <title></title>
+        
+  <link rel="icon" href="film2.gif" type="image/gif">
+        <link rel="stylesheet" href="project.css">
+    </head>
+<style>
+
+/* images */
+/* .grid-container {
+background-image: url('bonheur.gif');
+} */
+
+body {
+background-image: url('bonheur1.gif');
+}
+
+/* box colours */
+nav, header, footer, .grid-left, main, .grid-right {
+  background-color: rgba(105, 65, 35, 0.6);
+}
+
+</style>
+<body>
+  <section class="page-background">
+  <section class="grid-container">
+
+
+
+<!-- navigation board -->
+<nav>
+<ul>
+<li><a href="index.html">Home Page</a></li>
+<li><a href="page2.html">Watchlist</a></li>
+<li><a href="page3.html">Canvas</a></li>
+<li><a href="quiz.html">Quiz</a></li>
+</ul> 
+</nav>
+
+
+<!-- header -->
+      <header>     <section class="random-section">
+<h1>The Film Club.</h1></section></header>
+
+
+<!-- aside left -->
+<aside class="grid-left">
+</aside>
+
+
+
+<!-- main -->
+<section class="interactive-section">
+  <h2><img src="disc6.gif" alt="Paper" width="15"> Movie Quiz</h2>
+<section class="random-section">
+
+    <h1>How much do you know about cinema?</h1>
+
+    <p>This quiz initially going to be quite generic, but then I got a little bored of that. It shall now be named <i><u><b>How well do you know Amelie?</b></u></i>.</p>
+
+<form name="Quiz">
+<label for="name">Enter your name: </label><input type="text" name="name" size="30">
+<br><br>
+
+    <p>1. What is Amelie's favourite rom-com that features the main couple getting a divorce at some point in the film? </p>
+  <input type="radio" name="growth" value="Adam's Rib">
+  <label for="30%">Adam's Rib</label><br>
+  <input type="radio" name="growth" value="The Philadelphia Story">
+  <label for="The Philadelphia Story">The Philadelphia Story</label><br>
+  <input type="radio" name="growth" value="The Lady Eve">
+  <label for="The Lady Eve">The Lady Eve</label><br>
+    <input type="radio" name="growth" value="His Girl Friday">
+  <label for="His Girl Friday">His Girl Friday</label>
+<br><br>
+
+  <label for="talent">2. What percentage of movies has Amelie watched that are USAmerican? Round to the nearest 10.</label>
+  <input type="number" name="talent" min="0" max="100" step="10">
+<br><br>
+    <label for="talent">3. What percentage of movies has Amelie watched that are comedies? Round to the nearest 10.</label>
+  <input type="number" name="comedies" min="0" max="100" step="10">
+<br><br>
+    <p>4. Which one of these movies is on Amelie's top five favourite films on letterboxd? </p>
+  <input type="radio" name="fave" value="The Lion in Winter">
+  <label for="The Lion in Winter">The Lion in Winter</label><br>
+  <input type="radio" name="fave" value="Barbie">
+    <label for="Barbie">Barbie</label><br>
+  <input type="radio" name="fave" value="Fantastic Mr. Fox">
+  <label for="Fantastic Mr. Fox">Fantastic Mr. Fox</label><br>
+    <input type="radio" name="fave" value="La Passion Beatrice">
+  <label for="La Passion Beatrice">La Passion Beatrice</label>
+
+  <br><br>
+<p>5. Which one of these movies did Amelie NOT rewatch twice in 2024? </p>
+  <input type="radio" name="rewatch" value="Groundhog Day">
+  <label for="Groundhog Day">Groundhog Day</label><br>
+  <input type="radio" name="rewatch" value="Oasis: Supersonic">
+    <label for="Oasis: Supersonic">Oasis: Supersonic</label><br>
+  <input type="radio" name="rewatch" value="Re-Animator">
+  <label for="Re-Animator">Re-Animator</label><br>
+
+
+</form>
+
+<button type="button" onclick="checkAnswers();">Submit</button>
+
+</section>
+</section>
+</main>
+
+
+<!-- aside right -->
+<aside class="grid-right">
+</aside>
+
+
+      
+      <!-- footer -->
+      <footer><section class="random-section">Footer</section></footer>
+    </section>
+  </section>
+</body>
+        <script src="script.js"></script>
+
+</html>

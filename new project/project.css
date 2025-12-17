@@ -1,0 +1,293 @@
+/* Page container */
+.page-background {
+  width: 60%;
+  margin-top: 50px;
+}
+
+/* Navbar */
+
+nav ul {
+  display: flex;              
+  justify-content: center;    
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  margin: 0 0.5em;         /* space between buttons... */
+}
+
+nav a {
+  display: block;
+  color: antiquewhite;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  font-weight: normal;
+  transition: background-color 0.3s, font-weight 0.3s;
+}
+
+nav li:hover a {
+  background-color: rgb(112, 71, 55);
+  font-weight: bold;
+}
+
+nav a.active {
+  background-color: #000000;
+  color: antiquewhite;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  justify-content: center;
+
+  /* image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+
+
+/* Grid layout */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 10px;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 20px;
+  border: 2px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+nav, header, footer {
+  grid-column: 1 / 4;
+  padding: 10px;
+  text-align: center;
+}
+
+.grid-left, main, .grid-right {
+  padding: 10px;
+}
+
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+/* Interactive / random sections */
+.interactive-section,
+.random-section {
+  background-color: rgba(66, 42, 42, 0.441);
+  border: 1px solid rgba(57, 28, 28, 0.769);
+  color: #ccc;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.random-section:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.random-section p {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.2;
+}
+
+.interactive-section button,
+.random-section button {
+  background-color: rgb(214, 161, 161);
+  color: white;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 4px 8px;
+  font-size: 0.7rem;
+}
+
+.interactive-section input {
+  padding: 6px 8px;
+  margin: 6px 0 8px 0;
+  font-size: 0.9rem;
+  border: 1px solid #8b6d4b;
+  border-radius: 3px;
+}
+
+#output, #random-msg, #musicaudio {
+  margin: 6px 0;
+}
+
+#musicaudio {
+  width: 200px;
+}
+
+
+/* Overlay text  */
+.overlay-text {
+  position: absolute;
+  bottom: 0;   
+  left: 0;
+  width: 91.5%;
+  background-color: rgba(0,0,0,0.6); 
+  color: white;
+  text-align: center;
+  padding: 5px;
+  opacity: 0;   
+  transition: opacity 0.3s ease;
+  font-size: 14px;
+}
+
+
+
+/* to do list movie recommendations */
+#todo-list input[type="checkbox"]:checked + span {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+#todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* movie posters */
+.carousel {
+  height: 455px;
+  width: 100px;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  height: max-content;
+  animation: scrollUp 30s linear infinite;
+}
+
+.carousel img {
+  display: block;
+  margin: 5px;
+}
+
+@keyframes scrollUp {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50%);
+  }
+}
+
+
+/* image gallery */
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.image-grid section {
+  flex: 0 0 calc(33.333% - 13.33px); 
+  width: 50px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+
+
+/* journal/movie review section */
+#journal {
+  width: 200px;
+  height: 200px;
+  background-color: #f8dbcd79;
+  padding: 16px;
+  overflow-y: auto;
+  border: 1px solid #f8dbcd;
+  box-sizing: border-box;
+}
+
+#journal h2 {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+#journal p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.right {
+  margin-left: 75%;
+}
+
+/* Mobile Mode */
+@media screen and (max-width: 1200px) {
+  .page-background {
+    width: 90%;
+    margin-top: 20px;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  nav, header, footer, .grid-left, main, .grid-right {
+    grid-column: 1 / 2; 
+    padding: 8px;
+    text-align: center;
+  }
+
+  .interactive-section,
+  .random-section {
+    font-size: 0.85rem;
+    padding: 8px;
+  }
+
+  .interactive-section button,
+  .random-section button {
+    font-size: 0.8rem;
+    padding: 6px 10px;
+  }
+
+  .interactive-section input {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  #musicaudio {
+    width: 100%;
+  }
+
+  .carousel {
+  height: 455px; 
+  width: 100%;   
+  max-width: 600px; 
+  margin: 0 auto; 
+  overflow: hidden;
+  position: relative; 
+}
+
+#journal {
+width: auto
+}
+}

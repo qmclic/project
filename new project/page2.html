@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+
+  <title>The Film Club.</title>
+
+  <link rel="icon" href="film2.gif" type="image/gif">
+  <link rel="stylesheet" href="project.css">
+</head>
+<style>
+
+/* images */
+.grid-container {
+background-image: url('tarkovsky.gif');
+}
+
+body {
+background-image: url('tarkovsky.gif');
+}
+
+/* box colours */
+nav, header, footer, .grid-left, main, .grid-right {
+  background-color: rgba(10, 33, 20, 0.6);
+}
+
+
+</style>
+<body>
+<section class="page-background">
+<section class="grid-container">
+
+
+
+<!-- navigation -->
+<nav>
+<ul>
+<li><a href="index.html">Home Page</a></li>
+<li><a href="page2.html">Watchlist</a></li>
+<li><a href="page3.html">Canvas</a></li>
+</ul> 
+</nav>
+
+
+<!-- header -->
+<header>
+     <section class="random-section">
+<h1>The Film Club.</h1></section></header>
+
+
+
+<!-- aside left -->
+<aside class="grid-left">
+</aside>
+
+
+
+<!-- main -->
+<main>
+<section class="interactive-section">
+  <h2><img src="disc6.gif" alt="Paper" width="15"> Movie Watchlist</h2>
+<section class="random-section">
+<p>Not sure what to watch tonight? Let's take a look at your watchlist...</p>
+<ul id="todo-list">
+<li><label><input type="checkbox" data-id="task1"><span><i> Make Way for Tomorrow</i>, 1937, Leo McCarey </span></label></li>
+<li><label><input type="checkbox" data-id="task2"><span><i> Solaris</i>, 1972, Andrei Tarkovsky</span></label></li>
+<li><label><input type="checkbox" data-id="task3"><span><i> Raging Bull</i>, 1980, Martin Scorsese</span></label></li>
+<li><label><input type="checkbox" data-id="task4"><span><i> Kamikaze Girls</i>, 2004,  Tetsuya Nakashima</span></label></li>
+<li><label><input type="checkbox" data-id="task5"><span><i> The Leopard</i>, 1963,  Luchino Visconti</span></label></li>
+<li><label><input type="checkbox" data-id="task6"><span><i> The Color of Pomegranates</i>, 1969, Sergei Parajanov</span></label></li>
+<li><label><input type="checkbox" data-id="task7"><span><i> One Sings, the Other Doesn’t</i>, 1977, Agnes Varda</span></label></li>
+</ul>
+</section>
+<img src="blinkingkirby.gif" alt="Kirby standing still" width="30">
+
+
+<section class="random-section">
+<h3>Want to add something to your watchlist?</h3>
+<input type="text" id="new-task" placeholder="Type movie here">
+<button id="add-task">Add</button>
+<br><br>
+<button id="clear-watched">Clear watched</button>
+<button id="reset-list">Reset list to original</button>
+</section>
+
+
+</section>
+</main>
+
+
+<!-- aside right -->
+<aside class="grid-right">
+
+</aside>
+
+
+
+<!-- footer -->
+<footer><section class="random-section">Footer</section></footer>
+</section>
+</section>
+</body>
+
+<script src="page2.js"></script>
+<script src="bubbles.js"></script>
+
+
+</html>

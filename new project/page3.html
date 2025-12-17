@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+
+  <title>The Film Club.</title>
+
+  <link rel="icon" href="film2.gif" type="image/gif">
+  <link rel="stylesheet" href="project.css">
+</head>
+<style>
+
+.grid-container {
+background-image: url('.gif');
+}
+
+body {
+background-image: url('bonheur.gif');
+}
+
+
+/* lets paint */
+canvas {
+    border: 1px solid #ccc;
+    background-color: #ffffffa3;
+  }
+  .controls {
+    margin: 10px;
+  }
+  .controls input {
+    margin-right: 10px;
+  }
+
+
+/* box colours */
+nav, header, footer, .grid-left, main, .grid-right {
+  background-color: rgba(100, 152, 142, 0.6);
+}
+
+/* Start https://www.cursors-4u.com (pokemon) */ 
+/* * {cursor: url(https://cur.cursors-4u.net/games/gam-7/gam670.cur), auto !important;}  */
+/* End https://www.cursors-4u.com */
+
+/* Start https://www.cursors-4u.com (link) */ 
+/* * {cursor: url(https://cur.cursors-4u.net/games/gam-10/gam914.ani), url(https://cur.cursors-4u.net/games/gam-10/gam914.png), auto !important;}  */
+/* End https://www.cursors-4u.com */
+
+/* Start https://www.cursors-4u.com (zelda) */ 
+* {cursor: url(https://cur.cursors-4u.net/games/gam-10/gam926.ani), url(https://cur.cursors-4u.net/games/gam-10/gam926.png), auto !important;} 
+/* End https://www.cursors-4u.com */
+
+
+
+</style>
+<body>
+<section class="page-background">
+<section class="grid-container">
+
+
+
+<!-- navigation board -->
+<nav>
+<ul>
+<li><a href="index.html">Home Page</a></li>
+<li><a href="page2.html">Watchlist</a></li>
+<li><a href="page3.html">Canvas</a></li>
+
+</ul> 
+</nav>
+
+
+<!-- header -->
+<header><h1>The Film Club.</h1></header>
+
+
+<!-- aside left -->
+<aside class="grid-left">
+  <p><b> My favourite film posters</b></p>
+  <section class="carousel">
+    <section class="carousel-track">
+    <img src="posterssos.jpg" alt="Movie poster for Sweet Smell of Success">
+    <img src="postertliw.jpg" alt="Movie poster for The Lion in Winter">
+    <img src="posterthinman.jpg" alt="Movie poster for The Thin Man">
+    <img src="postermedea.jpg" alt="Movie poster for Medea">
+    <img src="posternewleaf.jpg" alt="Movie poster for A New Leaf">
+    <img src="posteritaliansinrussia.jpg" alt="Movie poster for Unbelievable Adventures of Italians in Russia">
+    <img src="gingersnaps.jpg" alt="Movie poster for Ginger Snaps">
+
+    <img src="posterssos.jpg" alt="Movie poster for Sweet Smell of Success">
+    <img src="postertliw.jpg" alt="Movie poster for The Lion in Winter">
+    <img src="posterthinman.jpg" alt="Movie poster for The Thin Man">
+    <img src="postermedea.jpg" alt="Movie poster for Medea">
+    <img src="posternewleaf.jpg" alt="Movie poster for A New Leaf">
+    <img src="posteritaliansinrussia.jpg" alt="Movie poster for Unbelievable Adventures of Italians in Russia">
+        <img src="gingersnaps.jpg" alt="Movie poster for Ginger Snaps">
+    </section>
+  </section>
+</aside>
+
+
+
+<!-- main -->
+<main>
+
+<!-- lets paint -->
+<h2>Painting</h2>
+<p> To me, cinema is all about art. So do some here. Make your own movie poster or just express urself artistically idk. All love is love
+
+
+</p>
+<section class="controls">
+Color: <input type="color" id="colorPicker" value="#000000">
+Brush: <input type="range" id="brushSize" min="1" max="20" value="3">
+<button id="clearBtn">Clear</button>
+<button id="saveBtn">Save</button>
+<button id="undoBtn">Undo</button>
+<button id="redoBtn">Redo</button>
+</section>
+<canvas id="drawingCanvas" width="570" height="400"></canvas>
+
+
+</main>
+
+
+<!-- aside right -->
+<aside class="grid-right">
+    <p><b> My favourite film posters</b></p>
+  <section class="carousel">
+    <section class="carousel-track">
+    <img src="poster2001.jpg" alt="Movie poster for 2001: A Space Odyssey">
+    <img src="posterbeatrice.jpg" alt="Movie poster for La Passion Beatrice">
+    <img src="posterdeadringers.jpg" alt="Movie poster for Dead Ringers">
+    <img src="posterdeathinvenice.jpg" alt="Movie poster for Death in Venice">
+    <img src="posterkanal.jpg" alt="Movie poster for Kanal">
+    <img src="theorem.jpg" alt="Movie poster for Teorema">
+
+     <img src="poster2001.jpg" alt="Movie poster for 2001: A Space Odyssey">
+    <img src="posterbeatrice.jpg" alt="Movie poster for La Passion Beatrice">
+    <img src="posterdeadringers.jpg" alt="Movie poster for Dead Ringers">
+    <img src="posterdeathinvenice.jpg" alt="Movie poster for Death in Venice">
+    <img src="posterkanal.jpg" alt="Movie poster for Kanal">
+    <img src="theorem.jpg" alt="Movie poster for Teorema">
+
+    </section>
+  </section>
+
+
+</aside>
+
+
+
+<!-- footer -->
+<footer>Footer</footer>
+</section>
+</section>
+</body>
+
+
+<script src="project.js"></script>
+<script src="paint.js"></script>
+
+</html>
