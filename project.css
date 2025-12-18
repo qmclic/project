@@ -4,6 +4,9 @@
   margin-top: 50px;
 }
 
+a {
+  color: pink; }
+
 /* Navbar */
 
 nav ul {
@@ -178,7 +181,7 @@ display: block;
 .carousel {
   width: 100%;
   max-width: 200px;
-  height: 455px;
+  height: 600px;
   overflow: hidden;
   margin: 0 auto;
 }
@@ -285,32 +288,6 @@ body.dark-mode main, body.dark-mode .grid-right, body.dark-mode .grid-left {
     color: white
 
 }
-
-
-/* poll */
-
-label {
-  display: block;
-  margin-bottom: 8px;
-}
-
-.hidden {
-  display: none;
-}
-
-.result {
-  margin-bottom: 10px;
-}
-
-.bar {
-  height: 12px;
-  background-color: #4a90e2;
-  margin-top: 4px;
-}
-
-
-
-
 
 /* Mobile */
 @media (max-width: 1200px) {
