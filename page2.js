@@ -146,12 +146,23 @@ darkModeBtn.addEventListener("click", () => {
 
 // poll
 
-  const form = document.getElementById("pollForm");
-  const results = document.getElementById("results");
 
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
-    form.style.display = "none";
-    results.classList.remove("hidden");
-  });
+
+const form = document.getElementById("pollForm");
+const results = document.getElementById("results");
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+  form.style.display = "none";
+  results.classList.remove("hidden");
+});
+
+
+// random messages
+const messages = ["Hommage à Zgougou (et salut à Sabine Mamou) by Agnes Varda", "Brothers by Robert Eggers", "Les tournesols by Rose Lowder", "Foryannfromrose by Rose Lowder", "The Musician Monkey by Émile Reynaud", "Freedom by Yoko Ono", "The Dante Quartet by Stan Brakhage", "A Colour Box by Len Lye", "Offering by Claudio Caldini", "Kustom Kar Kommandos by Kenneth Anger", "Paisaje-Duración: Carretera by Lois Patiño", "Lights by Marie Menken", "Beneath the Skin by Cecelia Condit", "Suburbs of Eden by Cecelia Condit", "Not a Jealous Bone by Cecelia Condit"];
+const msgEl = document.getElementById("random-msg");
+document.getElementById("random-btn").addEventListener("click", () => {
+  const index = Math.floor(Math.random() * messages.length);
+  msgEl.textContent = messages[index];
+});
 

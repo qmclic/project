@@ -171,6 +171,7 @@ nav, header, footer {
 .hollywood img {
 display: block;
     margin: 0 auto;
+    cursor: pointer; 
 }
 
 /* Carousel */
@@ -213,6 +214,8 @@ display: block;
   width: 50px;
   box-sizing: border-box;
   text-align: center;
+      cursor: pointer; 
+
 }
 
 
@@ -284,6 +287,26 @@ body.dark-mode main, body.dark-mode .grid-right, body.dark-mode .grid-left {
 }
 
 
+/* poll */
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.hidden {
+  display: none;
+}
+
+.result {
+  margin-bottom: 10px;
+}
+
+.bar {
+  height: 12px;
+  background-color: #4a90e2;
+  margin-top: 4px;
+}
 
 
 

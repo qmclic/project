@@ -28,28 +28,7 @@ nav, header, footer, .grid-left, main, .grid-right {
 
 
 
-/* poll */
 
-label {
-  display: block;
-  margin-bottom: 8px;
-}
-
-
-
-.hidden {
-  display: none;
-}
-
-.result {
-  margin-bottom: 10px;
-}
-
-.bar {
-  height: 12px;
-  background-color: #4a90e2;
-  margin-top: 4px;
-}
 
 
 
@@ -86,44 +65,13 @@ label {
 <section class="interactive-section">
 <section class="random-section">
 
-<section class="poll">
-  <p><b><u>Vote on which movie the Film Club should watch next...</u></b></p>
-<br>
-  <form id="pollForm">
-    <label>
-      <input type="radio" name="movie" value="a" required>
-      Inception
-    </label>
-
-    <label>
-      <input type="radio" name="movie" value="b">
-      The Dark Knight
-    </label>
-
-    <label>
-      <input type="radio" name="movie" value="c">
-      Interstellar
-    </label>
-
-    <button type="submit">Vote</button>
-  </form>
-
-  <section id="results" class="hidden">
-    <section class="result">
-      Inception <span>28%</span>
-      <section class="bar" style="width: 28%"></section>
-    </section>
-    <section class="result">
-      The Dark Knight <span>46%</span>
-      <section class="bar" style="width: 46%"></section>
-    </section>
-    <section class="result">
-      Interstellar <span>26%</span>
-      <section class="bar" style="width: 26%"></section>
-    </section>
-  </section>
 
 
+<!-- Random Message Example -->
+<section class="random-section">
+<p id="random-msg">Before starting a film, I like to watch a short film or two that compliments the feature length. </p><br><p> Click this button for a short film recommendation!</p>
+<button id="random-btn">Get Recommendation</button>
+</section>
 
 
 
@@ -173,7 +121,81 @@ label {
 
 <!-- aside right -->
 <aside class="grid-right">
+    <section class="interactive-section">
+<section class="random-section">
+<section class="poll">
+  <p><b><u>What is your favourite film that we watched as a film club?</u></b></p><br>
+  
+  
+  <form id="pollForm">
+    <label><input type="radio" name="movie" value="Kanal" required> Kanal</label>
+    <label><input type="radio" name="movie" value="Pokemon"> Pokémon: Happy Birthday to You!</label>
+    <label><input type="radio" name="movie" value="HouseOfYes"> The House of Yes</label>
+    <label><input type="radio" name="movie" value="ChildrensHour"> The Children's Hour</label>
+    <label><input type="radio" name="movie" value="JennifersBody"> Jennifer's Body</label>
+    <label><input type="radio" name="movie" value="LOTR"> Lord of the Rings: The Return of the King</label>
+    <label><input type="radio" name="movie" value="BeatlesHelp"> The Beatles: Help!</label>
+    <label><input type="radio" name="movie" value="ItaliansInRussia"> The Unbelievable Adventures of Italians in Russia</label>
+    <label><input type="radio" name="movie" value="NineToFive"> 9 to 5</label>
+    <label><input type="radio" name="movie" value="SovietHobbit"> Soviet Hobbit</label>
 
+    <button type="submit">Vote</button>
+  </form>
+
+  <section id="results" class="hidden">
+    <section class="result">
+      Soviet Hobbit <span>82%</span>
+      <section class="bar" style="width:82%"></section>
+    </section>
+
+    <section class="result">
+      The Unbelievable Adventures of Italians in Russia <span>9%</span>
+      <section class="bar" style="width:9%"></section>
+    </section>
+
+    <section class="result">
+      The Beatles: Help! <span>6%</span>
+      <section class="bar" style="width:6%"></section>
+    </section>
+
+        <section class="result">
+      The House of Yes <span>2%</span>
+      <section class="bar" style="width:2%"></section>
+    </section>
+
+    <section class="result">
+      Kanal <span>1%</span>
+      <section class="bar" style="width:1%"></section>
+    </section>
+
+    <section class="result zero">
+      Lord of the Rings: The Return of the King <span>0%</span>
+      <section class="bar" style="width:0%"></section>
+    </section>
+
+    <section class="result zero">
+      Jennifer's Body <span>0%</span>
+      <section class="bar" style="width:0%"></section>
+    </section>
+
+    <section class="result zero">
+      9 to 5 <span>0%</span>
+      <section class="bar" style="width:0%"></section>
+    </section>
+
+    <section class="result">
+      The Children's Hour <span>0%</span>
+      <section class="bar" style="width:0%"></section>
+    </section>
+
+    <section class="result">
+      Pokémon: Happy Birthday to You! <span>0%</span>
+      <section class="bar" style="width:0%"></section>
+    </section>
+  </section>
+  </section>
+    </section>
+  </section>
 </aside>
 
 
@@ -186,6 +208,7 @@ label {
 
 <script src="page2.js"></script>
 <script src="bubbles.js"></script>
+<script></script>
 
 
 </html>
