@@ -173,35 +173,30 @@ display: block;
     margin: 0 auto;
 }
 
-/* movie posters */
+/* Carousel */
 .carousel {
+  width: 100%;
+  max-width: 200px;
   height: 455px;
-  width: 100px;
   overflow: hidden;
+  margin: 0 auto;
 }
 
 .carousel-track {
   display: flex;
-  
   flex-direction: column;
-  justify-content: center; 
-  height: max-content;
   animation: scrollUp 30s linear infinite;
 }
 
 .carousel img {
-  display: block;
-
-  margin: 5px;
+width: 200px;  
+display: block;
+  margin: 5px auto;
 }
 
 @keyframes scrollUp {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(-50%);
-  }
+  from { transform: translateY(0); }
+  to { transform: translateY(-50%); }
 }
 
 
@@ -249,6 +244,16 @@ display: block;
 
 
 
+/* Canvas */
+canvas {
+  display: block;
+  max-width: 100%;
+  border: 1px solid #444;
+  background-color: white;
+  touch-action: none;
+}
+
+
 /* change background to non gif alternative  */
 body.dark-mode {
   background-image: none;
@@ -280,57 +285,42 @@ body.dark-mode main, body.dark-mode .grid-right, body.dark-mode .grid-left {
 
 
 
-/* Mobile Mode */
-@media screen and (max-width: 1200px) {
+
+
+
+
+/* Mobile */
+@media (max-width: 1200px) {
+
   .page-background {
     width: 90%;
-    margin-top: 20px;
+    margin: 20px auto 0 auto;
   }
 
   .grid-container {
     grid-template-columns: 1fr;
-    padding: 10px;
   }
 
-  nav, header, footer, .grid-left, main, .grid-right {
-    grid-column: 1 / 2; 
-    padding: 8px;
-    text-align: center;
+  nav,
+  header,
+  footer,
+  .grid-left,
+  main,
+  .grid-right {
+    grid-column: 1 / 2;
   }
 
-  .interactive-section,
-  .random-section {
-    font-size: 0.85rem;
-    padding: 8px;
-  }
-
-  .interactive-section button,
-  .random-section button {
-    font-size: 0.8rem;
-    padding: 6px 10px;
-  }
-
-  .interactive-section input {
-    width: 100%;
-    font-size: 0.9rem;
-  }
-
-  #musicaudio {
-    width: 100%;
-  }
-
-  .canvas {
-  width: 30
-  }
-
+  /* Vertical carousel */
   .carousel {
-  height: 200; 
-  margin: 0 auto; 
-  overflow: hidden;
-  position: relative; 
-}
+    height: 200px;
+    max-width: 100%;
+  }
 
-#journal {
-width: auto
-}
+    .carousel img {
+    width: 150px;
+  }
+
+  .carousel-track {
+    animation-duration: 20s;
+  }
 }

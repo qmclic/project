@@ -8,7 +8,7 @@ const nameInput = document.getElementById("name");
 function submitName() {
     const name = nameInput.value;
     if (!name) return;
-    output.textContent = `Welcome to my page, ${name}!`;
+    output.textContent = `Welcome to the film club, ${name}!`;
     nameInput.value = '';
 }
 

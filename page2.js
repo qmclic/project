@@ -144,17 +144,14 @@ darkModeBtn.addEventListener("click", () => {
 
 
 
-// // kerr image change
-// const kerrImg = document.getElementById("change-Kerr");
-// function changeKerrImage() {
-//   if (KerrImg.getAttribute("src") === "hollywood/Kerr.jpg") {
-//     KerrImg.alt = "A New Image of Maya Deren";
-//     KerrImg.src = "hollywood/Kerr1.jpg.jpg";
-//   } else {
-//     KerrImg.alt = "Original Maya Deren Image";
-//     KerrImg.src = "hollywood/Kerr.jpg";
-//   }
-// }
-// KerrImg.addEventListener("click", changeKerrImage);
+// poll
 
+  const form = document.getElementById("pollForm");
+  const results = document.getElementById("results");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    form.style.display = "none";
+    results.classList.remove("hidden");
+  });
 
